@@ -1,0 +1,17 @@
+{
+  "name": "formation-documentation-site",
+  "version": "1.0.0",
+  "description": "Documentation for the VA’s design system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jared Cunha",
+  "license": "ISC",
+  "dependencies": {
+    "@department-of-veterans-affairs/formation": "^1.7.5",
+    "react": "^15.5.4",
+    "react-dom": "^15.0.0",
+    "uswds": "^1.4.2"
+  }
+}
