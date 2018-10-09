@@ -4,3 +4,6 @@
 
 layout: home
 ---
+
+<div id="app"></div>
+<script src="{{ site.baseurl }}/dist/bundle.js"></script>
