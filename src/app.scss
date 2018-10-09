@@ -1,4 +1,8 @@
-$asset-path: '/node_modules/uswds/src' !default;
+
+$asset-path: '/uswds/src';
+$font-path: "~uswds/src/fonts";
+$image-path: "~uswds/src/img";
+
 @import '~@department-of-veterans-affairs/formation/sass/core'
 
 
