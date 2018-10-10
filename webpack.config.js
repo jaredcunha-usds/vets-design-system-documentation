@@ -1,6 +1,15 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+const getAbsolutePath = relativePath =>
+  path.join(__dirname, '../', relativePath);
+
+  const globalEntryFiles = {
+    styleConsolidated: getAbsolutePath(
+      'src/app.scss',
+    )
+  };
+
 module.exports = {
   entry: "./src/app.js",
   mode: 'development',
@@ -24,7 +33,17 @@ module.exports = {
         use: ExtractTextPlugin.extract(
           {
             fallback: 'style-loader',
-            use: ['css-loader', 'sass-loader']
+            use: [
+              {
+                loader: 'css-loader'
+              },
+              {
+                loader: 'resolve-url-loader'
+              },
+              {
+                loader: 'sass-loader'
+              }
+            ]
           })
       },
       {
@@ -32,12 +51,22 @@ module.exports = {
         loader: 'url-loader?limit=100000'
       },
       {
-        test: /\.(ttf|eot)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        // if we want to minify these images, we could add img-loader
+        // but it currently only would apply to three images from uswds
+        test: /\.(jpe?g|png|gif)$/i,
         use: {
-          loader: 'file-loader',
+          loader: 'url-loader',
+          options: {
+            limit: 10000,
+          },
         },
       },
-
+      {
+        test: /\.svg/,
+        use: {
+          loader: 'svg-url-loader',
+        },
+      }
     ]
   },
   plugins: [

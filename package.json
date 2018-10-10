@@ -21,7 +21,9 @@
     "uswds": "^1.4.2"
   },
   "devDependencies": {
+    "babel-polyfill": "^6.26.0",
     "css-loader": "^1.0.0",
+    "destination": "0.0.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^2.0.0",
     "mini-css-extract-plugin": "^0.4.3",
@@ -33,6 +35,8 @@
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.1",
     "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2"
+    "webpack-bundle-analyzer": "^3.0.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-manifest-plugin": "^2.0.4"
   }
 }

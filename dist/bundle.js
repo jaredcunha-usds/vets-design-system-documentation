@@ -104,7 +104,7 @@ eval("throw new Error(\"Module build failed (from ./node_modules/css-loader/inde
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// app.js\n__webpack_require__(/*! ../node_modules/@department-of-veterans-affairs/formation/sass/core.scss */ \"./node_modules/@department-of-veterans-affairs/formation/sass/core.scss\");\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("// @charset \"UTF-8\"\n// app.js\n__webpack_require__(/*! ../node_modules/@department-of-veterans-affairs/formation/sass/core.scss */ \"./node_modules/@department-of-veterans-affairs/formation/sass/core.scss\");\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ })
 

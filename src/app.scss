@@ -1,9 +1,6 @@
+// @charset "UTF-8"
 
-$asset-path: '/uswds/src';
-$font-path: "~uswds/src/fonts";
-$image-path: "~uswds/src/img";
-
-@import '~@department-of-veterans-affairs/formation/sass/core'
+@import '../node_modules/@department-of-veterans-affairs/formation/sass/core';
 
 
 
